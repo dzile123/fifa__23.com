@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("pozadina 1.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+
+   
+}
+.meni{
+    
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.logo{
+    color: white;
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo span{
+    color:red;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+.meni ul{
+    list-style: none;
+    display: flex;
+     
+}
+.meni ul li{
+    padding: 0px 17px;
+    position: relative;
+}
+.meni ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    transition: all 0.3s;
+    
+}
+.meni ul li a:hover{
+    color:  black;
+}
+.padajucimeni{
+    display: none;
+}
+.meni ul li:hover .padajucimeni{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 100%;
+    
+}
+
+.meni ul li:hover .padajucimeni ul{
+    display: block;
+    margin: 10px;
+}
+.meni ul li:hover .padajucimeni ul li {
+    width: 125px;
+    padding: 18px;
+}
+
